@@ -1,12 +1,14 @@
 # TouchDesigner Project - Lighting and Video Control
 
-[<img alt="header_image" width="100%" src="https://i.imgur.com/hU8NK1C.jpg" />](https://i.imgur.com/hU8NK1C.jpg)
+<img alt="header_image" width="100%" src="https://i.imgur.com/hU8NK1C.jpg" />
 
 Detailed here is my project, which involves the creation of a control system using TouchDesigner to manage the lighting and video scenes of a show. The project aimed to streamline the control of video scenes called "stories" that were comprised of video sections accompanied by audio playing on a 360-degree speaker. The system that I developed in TouchDesigner enabled seamless control of the lighting using DMX output, and also allowed for the sending of OSC commands to Resolume to manage a multi-projector setup. With this system in place, the show's operation was simplified, and all that was needed was to hit the "cue" button, triggering the logic that I created in TouchDesigner to run the show smoothly. In order to further enhance the functionality of the control system, I implemented a class-based approach with Python for some of the lighting commands. This approach helped to improve the organization and efficiency of the system, making it easier to manage and modify as needed.
 
 ### Control GUI
-[<img alt="gui_image" width="45%" src="https://i.imgur.com/XbfV9E6.png" />](https://i.imgur.com/XbfV9E6.png)
-[<img alt="gui_active_image" width="46%" src="https://i.imgur.com/KJju3kT.png" />](https://i.imgur.com/KJju3kT.png)
+<p float="left">
+  <img src="https://i.imgur.com/XbfV9E6.png" width="480" />
+  <img src="https://i.imgur.com/KJju3kT.png" width="500" /> 
+</p>
 
 The class contains a variety of different methods that can be used to control the overall level of the lighting, as well as individual lighting channels. This approach is especially useful when it comes to making changes to the system, as it allows for modifications to be made in a more streamlined and efficient manner.
 
