@@ -14,7 +14,9 @@ The class contains a variety of different methods that can be used to control th
 
 By abstracting away the complexity of the individual CHOP operators and instead focusing on the higher-level controls of the lighting system, the class-based approach that I developed makes it easier to modify the lighting setup in a more holistic manner. This approach can save a significant amount of time and effort, as it reduces the need to manually modify each individual operator. I found it to be most usefull for setting fade times and overall intensity of the DMX output.
 
-![gif](https://i.imgur.com/Jz1DTgm.gif)
+<p align="center">
+  <img alt="scripts" width="50%" src="https://i.imgur.com/Jz1DTgm.gif" />
+</p>
 
 <details>
   <summary>Expand code</summary>
@@ -130,10 +132,8 @@ op('lighting').ResetScenes().FadeIn(0.5).FadeOut(1)
 
 The blackout button is also a CHOP Execute button which running the following code below. When active, the button turns red to give visual feedback to the user to know "blackout" is active. Once turned off, the color returns back to normal and the lights are set to full by increasing the overall intensity/master fader level of the output to the DMX OUT CHOP.
 
-<details>
-  <summary>Expand code</summary>
 
-  ### Blackout Code
+### Blackout Code
   ```
 def onOffToOn(channel, sampleIndex, val, prev):
 	op('lighting').Blackout()
@@ -154,8 +154,6 @@ def whileOff(channel, sampleIndex, val, prev):
 def onValueChange(channel, sampleIndex, val, prev):
 	return
 ```
-</details>
-
 
 <p align="center">
   <img alt="scripts" width="90%" src="https://i.imgur.com/04CN6WG.jpg" />
@@ -196,3 +194,11 @@ As part of the show, audience members were able to step on platforms in the perf
 <p align="center">
   <img alt="interaction" width="50%" src="https://i.imgur.com/wzeONSx.jpg" />
 </p>
+
+### Example Script
+```
+def onValueChange(channel, sampleIndex, val, prev):
+	noise = '/composition/layers/3/video/effects/distortion/opacity'
+	parent(2).op('main_osc_out').sendOSC(noise,[val])
+	return
+```
