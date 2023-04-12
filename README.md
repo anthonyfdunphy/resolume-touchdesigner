@@ -14,6 +14,8 @@ The class contains a variety of different methods that can be used to control th
 
 By abstracting away the complexity of the individual CHOP operators and instead focusing on the higher-level controls of the lighting system, the class-based approach that I developed makes it easier to modify the lighting setup in a more holistic manner. This approach can save a significant amount of time and effort, as it reduces the need to manually modify each individual operator. I found it to be most usefull for setting fade times and overall intensity of the DMX output.
 
+![gif](https://i.imgur.com/Jz1DTgm.gif)
+
 <details>
   <summary>Expand code</summary>
   
