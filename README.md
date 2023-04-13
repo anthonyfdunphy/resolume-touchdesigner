@@ -12,7 +12,7 @@ Detailed here is my project, which involves the creation of a control system usi
 
 The class contains a variety of different methods that can be used to control the overall level of the lighting, as well as individual lighting channels. This approach is especially useful when it comes to making changes to the system, as it allows for modifications to be made in a more streamlined and efficient manner.
 
-By abstracting away the complexity of the individual CHOP operators and instead focusing on the higher-level controls of the lighting system, the class-based approach that I developed makes it easier to modify the lighting setup in a more holistic manner. This approach can save a significant amount of time and effort, as it reduces the need to manually modify each individual operator. I found it to be most usefull for setting fade times and overall intensity of the DMX output.
+By abstracting away the complexity of the individual CHOP operators and instead focusing on the higher-level controls of the lighting system, the class-based approach that I developed makes it easier to modify the lighting setup in a more holistic manner. This approach can save a significant amount of time and effort, as it reduces the need to manually modify each individual operator. I found it to be most useful for setting fade times and overall intensity of the DMX output.
 
 <div align="center">
   <video src="https://user-images.githubusercontent.com/93882580/231711767-a239c413-d1f6-4aae-a434-a05eb8cbb557.mov" width="400" />
